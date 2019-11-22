@@ -1,0 +1,6 @@
+fastapi==0.42.0
+gunicorn==19.9.0
+uvicorn==0.10.3
+pydantic==0.32.2
+pytest==4.5.0
+
