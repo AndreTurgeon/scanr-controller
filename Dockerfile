@@ -10,6 +10,6 @@ ADD requirements.txt /requirements.txt
 RUN pip install --no-cache-dir -r /requirements.txt
 
 WORKDIR /workdir
-ADD wrapper.py wrapper.py
+ADD controller/app.py app.py
 
-ENTRYPOINT ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8080", "wrapper:app"]
+ENTRYPOINT ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8080", "app:app"]

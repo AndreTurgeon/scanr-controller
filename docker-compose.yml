@@ -1,0 +1,12 @@
+version: '3'
+services:
+  controller:
+    build: .
+    ports:
+      - "8080:8080"
+  model:
+    ports:
+      - "8090:8080"
+    volumes:
+      - "/Users/aturgeon/models/fake_model_enron:/workdir/model"
+    image: "515418792745.dkr.ecr.us-west-2.amazonaws.com/scanr/model-wrapper:latest"

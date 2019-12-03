@@ -2,5 +2,9 @@ fastapi==0.42.0
 gunicorn==19.9.0
 uvicorn==0.10.3
 pydantic==0.32.2
+requests==2.22.0
+python-dotenv==0.10.3
+# Test dependencies
 pytest==4.5.0
-
+httpretty==0.9.7
+scanr-common==1.0b2
